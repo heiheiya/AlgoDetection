@@ -63,6 +63,8 @@ public:
     float nms = .4;
     bool wait_stream;
 
+	DECTECTIONDLL_API Detector(int gpu_id = 0) : cur_gpu_id(gpu_id) 
+	{}
 	DECTECTIONDLL_API Detector(std::string cfg_filename, std::string weight_filename, int gpu_id = 0);
 	DECTECTIONDLL_API ~Detector();
 

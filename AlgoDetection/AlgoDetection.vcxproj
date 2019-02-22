@@ -26,6 +26,7 @@
   <ItemGroup>
     <ClCompile Include="src\activations.c" />
     <ClCompile Include="src\activation_layer.c" />
+    <ClCompile Include="src\AlgoDetection.cpp" />
     <ClCompile Include="src\art.c" />
     <ClCompile Include="src\avgpool_layer.c" />
     <ClCompile Include="src\batchnorm_layer.c" />
@@ -94,6 +95,7 @@
   <ItemGroup>
     <ClInclude Include="src\activations.h" />
     <ClInclude Include="src\activation_layer.h" />
+    <ClInclude Include="src\AlgoDetection.h" />
     <ClInclude Include="src\avgpool_layer.h" />
     <ClInclude Include="src\batchnorm_layer.h" />
     <ClInclude Include="src\blas.h" />

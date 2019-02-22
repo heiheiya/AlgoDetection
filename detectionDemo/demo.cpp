@@ -4,6 +4,7 @@
 #include <chrono>
 #include <opencv2/opencv.hpp>
 #include "../AlgoDetection/src/detection_class.hpp"
+#include "../AlgoDetection/src/AlgoDetection.h"
 
 #pragma comment(lib, "opencv_world320.lib")
 
@@ -61,7 +62,7 @@ int main(int argc, char *argv[])
 
 	float const thresh = 0.2;
 
-	Detector detector(cfg_file, weights_file);
+	initDetector(cfg_file, weights_file);
 	auto objNames = objects_names_from_file(name_file);
 
 	while (true)
@@ -82,16 +83,24 @@ int main(int argc, char *argv[])
 			cv::Mat matImg = cv::imread(file_name);
 
 			auto start = std::chrono::steady_clock::now();
-			std::vector<bbox_t> resultVec = detector.detect(matImg);
+			std::vector<boundingbox> resultVec = detectDL(matImg);
 			auto end = std::chrono::steady_clock::now();
 			std::chrono::duration<double> time = end - start;
 			std::cout << "Time: " << time.count() << " sec" << std::endl;
 
-			draw_boxes(matImg, resultVec, objNames);
-			cv::namedWindow("detection", cv::WINDOW_NORMAL);
-			cv::imshow("detection", matImg);
-			show_console_result(resultVec, objNames);
-			cv::waitKey(0);
+			for (size_t i = 0; i < resultVec.size(); ++i)
+			{
+				std::cout << "object " << i << std::endl;
+				std::cout<<"obj id: "<< resultVec[i].obj_id << " bbox: "
+					<<resultVec[i].x << " "<< resultVec[i].y
+					<< " " << resultVec[i].w << " " << resultVec[i].h
+					<<" score: "<< resultVec[i].prob<<std::endl;
+			}
+			//draw_boxes(matImg, resultVec, objNames);
+			//cv::namedWindow("detection", cv::WINDOW_NORMAL);
+			//cv::imshow("detection", matImg);
+			//show_console_result(resultVec, objNames);
+			//cv::waitKey(0);
 		} 
 		else
 		{
