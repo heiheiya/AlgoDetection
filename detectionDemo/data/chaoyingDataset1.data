@@ -1,0 +1,6 @@
+classes= 30
+train  = data/chaoyingDataset1.txt
+valid  = data/chaoyingDataset1_val.txt
+names = data/chaoyingDataset1.names
+backup = backup/
+
