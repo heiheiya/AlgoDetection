@@ -3,12 +3,12 @@
 
 Detector *detector;
 
-
 int initDetector(std::string cfg_filename, std::string weight_filename)
 {
 	if (cfg_filename.empty() || weight_filename.empty())
 	{
-		throw std::runtime_error("cfg filename or weight filename is empty");
+		std::cout<<"cfg filename or weight filename is empty"<<std::endl;
+		return -1;
 	}
 	detector = new Detector(cfg_filename, weight_filename);
 	return 0;
@@ -20,18 +20,20 @@ DECTECTIONDLL_API void releaseDetector()
 	{
 		delete detector;
 		detector = NULL;
+		std::cout << "object detector released!" << std::endl;
 	}
 }
 
-DECTECTIONDLL_API std::vector<boundingbox> detectDL(cv::Mat mat, float thresh/* = 0.2*/, bool use_mean/* = false*/)
+DECTECTIONDLL_API std::vector<boundingbox> detectDL(cv::Mat image, float thresh/* = 0.2*/, bool use_mean/* = false*/)
 {
-	if (mat.data == NULL)
+	std::vector<boundingbox> detectionDL;
+	if (image.data == NULL)
 	{
 		throw std::runtime_error("image is empty");
+		return detectionDL;
 	}
 
-	std::vector<bbox_t> detection = detector->detect(mat);
-	std::vector<boundingbox> detectionDL;
+	std::vector<bbox_t> detection = detector->detect(image);	
 	for (size_t i = 0; i < detection.size(); ++i)
 	{
 		boundingbox bbox;

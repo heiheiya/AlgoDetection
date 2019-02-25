@@ -72,8 +72,10 @@ int main(int argc, char *argv[])
 		{
 			std::cin >> file_name;
 		}
-		if (file_name.size() == 0)
+		if (file_name == "q")
 		{
+			releaseDetector();
+			system("pause");
 			break;
 		}
 
