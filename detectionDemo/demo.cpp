@@ -4,8 +4,9 @@
 #include <chrono>
 #include <opencv2/opencv.hpp>
 #include "../src/detection_class.hpp"
-#include "../src/AlgoDetection.h"
+//#include "../src/AlgoDetection.h"
 
+#pragma comment(lib, "AlgoDetection.lib")
 #pragma comment(lib, "opencv_world320.lib")
 
 
@@ -55,14 +56,15 @@ void draw_boxes(cv::Mat mat_img, std::vector<bbox_t> result_vec, std::vector<std
 
 int main(int argc, char *argv[])
 {
-	std::string name_file = "data/light.names";
-	std::string cfg_file = "data/yolov3-light.cfg";
-	std::string weights_file = "data/yolov3-light_100000.weights";
+	std::string name_file = "data/chaoyingDataset1.names";
+	std::string cfg_file = "data/yolov3-chaoyingDataset1.cfg";
+	std::string weights_file = "data/yolov3-chaoyingDataset1_50600.weights";
 	std::string file_name;
 
 	float const thresh = 0.2;
 
-	initDetector(cfg_file, weights_file);
+	Detector detector(cfg_file, weights_file);
+	//initDetector(cfg_file, weights_file);
 	auto objNames = objects_names_from_file(name_file);
 
 	while (true)
@@ -72,12 +74,12 @@ int main(int argc, char *argv[])
 		{
 			std::cin >> file_name;
 		}
-		if (file_name == "q")
-		{
-			releaseDetector();
-			system("pause");
-			break;
-		}
+		//if (file_name == "q")
+		//{
+		//	releaseDetector();
+		//	system("pause");
+		//	break;
+		//}
 
 		std::string const fileExt = file_name.substr(file_name.find_last_of(".") + 1);
 		if (fileExt == "jpg" || fileExt == "JPEG" )
@@ -85,7 +87,8 @@ int main(int argc, char *argv[])
 			cv::Mat matImg = cv::imread(file_name);
 
 			auto start = std::chrono::steady_clock::now();
-			std::vector<boundingbox> resultVec = detectDL(matImg);
+			//std::vector<boundingbox> resultVec = detectDL(matImg);
+			std::vector<bbox_t> resultVec = detector.detect(matImg);
 			auto end = std::chrono::steady_clock::now();
 			std::chrono::duration<double> time = end - start;
 			std::cout << "Time: " << time.count() << " sec" << std::endl;
@@ -98,11 +101,11 @@ int main(int argc, char *argv[])
 					<< " " << resultVec[i].w << " " << resultVec[i].h
 					<<" score: "<< resultVec[i].prob<<std::endl;
 			}
-			//draw_boxes(matImg, resultVec, objNames);
-			//cv::namedWindow("detection", cv::WINDOW_NORMAL);
-			//cv::imshow("detection", matImg);
-			//show_console_result(resultVec, objNames);
-			//cv::waitKey(0);
+			draw_boxes(matImg, resultVec, objNames);
+			cv::namedWindow("detection", cv::WINDOW_NORMAL);
+			cv::imshow("detection", matImg);
+			show_console_result(resultVec, objNames);
+			cv::waitKey(0);
 		} 
 		else
 		{
