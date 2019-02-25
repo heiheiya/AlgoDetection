@@ -3,8 +3,8 @@
 #include <iostream>
 #include <chrono>
 #include <opencv2/opencv.hpp>
-#include "../AlgoDetection/src/detection_class.hpp"
-#include "../AlgoDetection/src/AlgoDetection.h"
+#include "../src/detection_class.hpp"
+#include "../src/AlgoDetection.h"
 
 #pragma comment(lib, "opencv_world320.lib")
 
