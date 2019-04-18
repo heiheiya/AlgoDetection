@@ -115,7 +115,7 @@ std::vector<std::string> objects_names_from_file(std::string const filename)
 	{
 		fileLines.push_back(line);
 	}
-	std::cout << "objects names loaded!" << std::endl;
+	//std::cout << "objects names loaded!" << std::endl;
 	return fileLines;
 }
 
@@ -133,7 +133,7 @@ DECTECTIONDLL_API Detector::Detector(std::string cfg_filename, std::string weigh
 #ifdef GPU
     //check_cuda( cudaSetDevice(cur_gpu_id) );
     cuda_set_device(cur_gpu_id);
-    printf(" Used GPU %d \n", cur_gpu_id);
+    //printf(" Used GPU %d \n", cur_gpu_id);
 #endif
     network &net = detector_gpu.net;
     net.gpu_index = cur_gpu_id;

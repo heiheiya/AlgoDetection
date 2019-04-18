@@ -878,6 +878,12 @@ void validate_detector_map(char *datacfg, char *cfgfile, char *weightfile, float
     mean_average_precision = mean_average_precision / classes;
     printf("\n mean average precision (mAP) = %f, or %2.2f %% \n", mean_average_precision, mean_average_precision*100);
 
+	FILE *fp;
+	if ((fp = fopen("mAP.txt", "a+")) != NULL)
+	{
+		fprintf(fp, "%2.2f %%\n", mean_average_precision * 100);
+		fclose(fp);
+	}
 
     for (i = 0; i < classes; ++i) {
         free(pr[i]);

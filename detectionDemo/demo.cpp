@@ -56,9 +56,9 @@ void draw_boxes(cv::Mat mat_img, std::vector<bbox_t> result_vec, std::vector<std
 
 int main(int argc, char *argv[])
 {
-	std::string name_file = "data/chaoyingDataset1.names";
-	std::string cfg_file = "data/yolov3-chaoyingDataset1.cfg";
-	std::string weights_file = "data/yolov3-chaoyingDataset1_50600.weights";
+	std::string name_file = "data/chaoyingDataset2.names";
+	std::string cfg_file = "data/yolov3-tiny-chaoyingDataset2.cfg";
+	std::string weights_file = "data/yolov3-tiny-chaoyingDataset2_46000.weights";
 	std::string file_name;
 
 	float const thresh = 0.2;
@@ -82,7 +82,7 @@ int main(int argc, char *argv[])
 		//}
 
 		std::string const fileExt = file_name.substr(file_name.find_last_of(".") + 1);
-		if (fileExt == "jpg" || fileExt == "JPEG" )
+		if (fileExt == "jpg" || fileExt == "JPEG" || fileExt == "png")
 		{
 			cv::Mat matImg = cv::imread(file_name);
 
