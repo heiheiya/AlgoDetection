@@ -67,6 +67,16 @@ int main(int argc, char *argv[])
 	//initDetector(cfg_file, weights_file);
 	auto objNames = objects_names_from_file(name_file);
 
+	//char filename[100] = "text.txt";
+	//char *ext = strrchr(filename, '.');
+	//if (ext)
+	//{
+	//	*ext = '\0';
+	//	ext++;
+	//}
+	//printf("name=%s\n", filename);
+	//printf("ext-name=%s\n", ext);
+
 	while (true)
 	{
 		std::cout << "input image filename: ";
@@ -102,6 +112,10 @@ int main(int argc, char *argv[])
 					<<" score: "<< resultVec[i].prob<<std::endl;
 			}
 			draw_boxes(matImg, resultVec, objNames);
+			std::string outName = file_name.substr(0, file_name.rfind("."));
+			outName = outName + "_prediction.png";
+			//std::cout << outName << std::endl;
+			cv::imwrite(outName, matImg);
 			cv::namedWindow("detection", cv::WINDOW_NORMAL);
 			cv::imshow("detection", matImg);
 			show_console_result(resultVec, objNames);
