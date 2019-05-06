@@ -64,8 +64,6 @@ int main(int argc, char *argv[])
 
 	float const thresh = 0.2;
 
-	//Detector detector(cfg_file, weights_file);
-	//initDetector(cfg_file, weights_file);
 	Detection* detector1 = AlgoDetectionManager::create(cfg_file1, weights_file1);
 	auto objNames1 = objects_names_from_file(name_file1);
 
@@ -88,7 +86,6 @@ int main(int argc, char *argv[])
 			cv::Mat matImg = cv::imread(file_name1);
 
 			auto start = std::chrono::steady_clock::now();
-			//std::vector<boundingbox> resultVec = detectDL(matImg);
 			std::vector<boundingbox> resultVec;
 			int err = detector1->detect(matImg, resultVec);
 			auto end = std::chrono::steady_clock::now();
@@ -127,8 +124,6 @@ int main(int argc, char *argv[])
 	std::string weights_file2 = "data/yolov3-tiny-chaoyingDataset2_46000.weights";
 	std::string file_name2;
 
-	//Detector detector(cfg_file, weights_file);
-	//initDetector(cfg_file, weights_file);
 	Detection* detector2 = AlgoDetectionManager::create(cfg_file2, weights_file2);
 	auto objNames2 = objects_names_from_file(name_file2);
 
@@ -150,7 +145,6 @@ int main(int argc, char *argv[])
 			cv::Mat matImg = cv::imread(file_name2);
 
 			auto start = std::chrono::steady_clock::now();
-			//std::vector<boundingbox> resultVec = detectDL(matImg);
 			std::vector<boundingbox> resultVec;
 			int err = detector2->detect(matImg, resultVec);
 			auto end = std::chrono::steady_clock::now();
@@ -168,7 +162,6 @@ int main(int argc, char *argv[])
 			draw_boxes(matImg, resultVec, objNames2);
 			std::string outName = file_name2.substr(0, file_name2.rfind("."));
 			outName = outName + "_prediction.png";
-			//std::cout << outName << std::endl;
 			cv::imwrite(outName, matImg);
 			cv::namedWindow("detection", cv::WINDOW_NORMAL);
 			cv::imshow("detection", matImg);
