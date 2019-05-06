@@ -216,6 +216,9 @@
     <ClCompile Include="..\src\yolo_layer.c">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="..\src\AlgoDetectionManager.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\src\activation_layer.h">
@@ -369,6 +372,15 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="..\src\yolo_layer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\AlgoDetectionManager.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\common.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\detection.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

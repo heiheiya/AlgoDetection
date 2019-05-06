@@ -27,6 +27,7 @@
     <ClCompile Include="..\src\activations.c" />
     <ClCompile Include="..\src\activation_layer.c" />
     <ClCompile Include="..\src\AlgoDetection.cpp" />
+    <ClCompile Include="..\src\AlgoDetectionManager.cpp" />
     <ClCompile Include="..\src\art.c" />
     <ClCompile Include="..\src\avgpool_layer.c" />
     <ClCompile Include="..\src\batchnorm_layer.c" />
@@ -96,12 +97,14 @@
     <ClInclude Include="..\src\activations.h" />
     <ClInclude Include="..\src\activation_layer.h" />
     <ClInclude Include="..\src\AlgoDetection.h" />
+    <ClInclude Include="..\src\AlgoDetectionManager.h" />
     <ClInclude Include="..\src\avgpool_layer.h" />
     <ClInclude Include="..\src\batchnorm_layer.h" />
     <ClInclude Include="..\src\blas.h" />
     <ClInclude Include="..\src\box.h" />
     <ClInclude Include="..\src\classifier.h" />
     <ClInclude Include="..\src\col2im.h" />
+    <ClInclude Include="..\src\common.h" />
     <ClInclude Include="..\src\connected_layer.h" />
     <ClInclude Include="..\src\convolutional_layer.h" />
     <ClInclude Include="..\src\cost_layer.h" />
@@ -111,6 +114,7 @@
     <ClInclude Include="..\src\data.h" />
     <ClInclude Include="..\src\deconvolutional_layer.h" />
     <ClInclude Include="..\src\demo.h" />
+    <ClInclude Include="..\src\detection.h" />
     <ClInclude Include="..\src\detection_class.hpp" />
     <ClInclude Include="..\src\detection_layer.h" />
     <ClInclude Include="..\src\dropout_layer.h" />
