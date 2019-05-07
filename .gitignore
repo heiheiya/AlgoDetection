@@ -1,2 +1,10 @@
 *.db
 *.opendb
+*.lastbuildstate
+*.tlog
+*.obj
+*.log
+*.pdb
+*.png
+*.names
+*.cfg

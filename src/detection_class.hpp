@@ -35,7 +35,7 @@ struct bbox_t_container {
     bbox_t candidates[C_SHARP_MAX_OBJECTS];
 };
 
-#ifdef __cplusplus
+//#ifdef __cplusplus
 #include <memory>
 #include <vector>
 #include <deque>
@@ -47,12 +47,12 @@ struct bbox_t_container {
 #include <opencv2/imgproc/imgproc_c.h>    // C
 #endif    // OPENCV
 
-extern "C" DECTECTIONDLL_API int init(const char *configurationFilename, const char *weightsFilename, int gpu);
-extern "C" DECTECTIONDLL_API int detect_image(const char *filename, bbox_t_container &container);
-extern "C" DECTECTIONDLL_API int detect_mat(const uint8_t* data, const size_t data_length, bbox_t_container &container);
-extern "C" DECTECTIONDLL_API int dispose();
-extern "C" DECTECTIONDLL_API int get_device_count();
-extern "C" DECTECTIONDLL_API int get_device_name(int gpu, char* deviceName);
+DECTECTIONDLL_API int init(const char *configurationFilename, const char *weightsFilename, int gpu);
+DECTECTIONDLL_API int detect_image(const char *filename, bbox_t_container &container);
+DECTECTIONDLL_API int detect_mat(const uint8_t* data, const size_t data_length, bbox_t_container &container);
+DECTECTIONDLL_API int dispose();
+DECTECTIONDLL_API int get_device_count();
+DECTECTIONDLL_API int get_device_name(int gpu, char* deviceName);
 DECTECTIONDLL_API std::vector<std::string> objects_names_from_file(std::string const filename);
 
 class Detector {
@@ -314,5 +314,5 @@ public:
 #endif    // OPENCV
 
 //extern "C" {
-#endif    // __cplusplus
+//#endif    // __cplusplus
 

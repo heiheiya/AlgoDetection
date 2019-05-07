@@ -7,9 +7,9 @@
 #include "opencv2/imgproc/imgproc_c.h"
 #endif
 
-#ifdef __cplusplus
-extern "C" {
-#endif
+//#ifdef __cplusplus
+//extern "C" {
+//#endif
 #include "image.h"
 #include <stdint.h>
 
@@ -33,8 +33,8 @@ void stop_timer_and_show();
 void stop_timer_and_show_name(char *name);
 void show_total_time();
 
-#ifdef __cplusplus
-}
-#endif
+//#ifdef __cplusplus
+//}
+//#endif
 
 #endif // HTTP_STREAM_H

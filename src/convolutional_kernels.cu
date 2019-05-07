@@ -6,26 +6,22 @@
 #pragma comment(lib, "cudnn.lib")
 #endif
 
-extern "C" {
+#include "utils.h"
 #include "convolutional_layer.h"
 #include "batchnorm_layer.h"
 #include "gemm.h"
 #include "blas.h"
 #include "im2col.h"
 #include "col2im.h"
-#include "utils.h"
 #include "cuda.h"
-}
 
-extern "C" {
-    double get_time_point();
-    void start_timer();
-    void stop_timer();
-    double get_time();
-    void stop_timer_and_show();
-    void stop_timer_and_show_name(char *name);
-    void show_total_time();
-}
+//double get_time_point();
+//void start_timer();
+//void stop_timer();
+//double get_time();
+//void stop_timer_and_show();
+//void stop_timer_and_show_name(char *name);
+//void show_total_time();
 
 __global__ void binarize_kernel(float *x, int n, float *binary)
 {

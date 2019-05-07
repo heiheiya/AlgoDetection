@@ -24,7 +24,7 @@ void forward_local_layer(const local_layer layer, network_state state);
 void backward_local_layer(local_layer layer, network_state state);
 void update_local_layer(local_layer layer, int batch, float learning_rate, float momentum, float decay);
 
-void bias_output(float *output, float *biases, int batch, int n, int size);
+//void bias_output(float *output, float *biases, int batch, int n, int size);
 void backward_bias(float *bias_updates, float *delta, int batch, int n, int size);
 
 #endif

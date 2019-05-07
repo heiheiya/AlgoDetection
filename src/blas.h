@@ -6,7 +6,7 @@ float *random_matrix(int rows, int cols);
 void time_random_matrix(int TA, int TB, int m, int k, int n);
 void reorg_cpu(float *x, int w, int h, int c, int batch, int stride, int forward, float *out);
 
-void test_blas();
+//void test_blas();
 
 void const_cpu(int N, float ALPHA, float *X, int INCX);
 void constrain_ongpu(int N, float ALPHA, float * X, int INCX);

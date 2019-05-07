@@ -22,9 +22,9 @@ Cambridge, MA 02139, USA.  */
 #ifndef _GETOPT_H
 #define _GETOPT_H 1
 
-#ifdef	__cplusplus
-extern "C" {
-#endif
+//#ifdef	__cplusplus
+//extern "C" {
+//#endif
 
 /* For communication from `getopt' to the caller.
    When `getopt' finds an option that takes an argument,
@@ -126,8 +126,8 @@ extern int getopt_long_only ();
 extern int _getopt_internal ();
 #endif /* __STDC__ */
 
-#ifdef	__cplusplus
-}
-#endif
+//#ifdef	__cplusplus
+//}
+//#endif
 
 #endif /* _GETOPT_H */

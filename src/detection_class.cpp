@@ -2,7 +2,6 @@
 
 #include "network.h"
 
-extern "C" {
 #include "detection_layer.h"
 #include "region_layer.h"
 #include "cost_layer.h"
@@ -13,7 +12,7 @@ extern "C" {
 #include "demo.h"
 #include "option_list.h"
 #include "stb_image.h"
-}
+
 //#include <sys/time.h>
 
 #include <vector>

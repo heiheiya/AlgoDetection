@@ -267,9 +267,9 @@ int get_stream_fps_cpp(CvCapture *cap) {
     return fps;
 }
 // ----------------------------------------
-extern "C" {
-    image ipl_to_image(IplImage* src);    // image.c
-}
+//extern "C" {
+image ipl_to_image(IplImage* src);    // image.c
+//}
 
 image image_data_augmentation(IplImage* ipl, int w, int h,
     int pleft, int ptop, int swidth, int sheight, int flip,

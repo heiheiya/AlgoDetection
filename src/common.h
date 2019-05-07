@@ -1,0 +1,10 @@
+#pragma once
+
+#define CYAL_DETECTION_SUCCESS                   0
+#define CYAL_DETECTION_IMAGE_EMPTY_ERROR        -1
+#define CYAL_DETECTION_CUDA_ERROR               -2
+#define CYAL_DETECTION_CUDA_GET_DEVICE_ERROR    -3
+#define CYAL_DETECTION_CUDNN_SET_STREAM_ERROR   -4
+#define CYAL_DETECTION_MALLOC_ERROR             -5
+#define CYAL_DETECTION_FILE_ERROR               -6
+#define CYAL_DETECTION_MAKE_LAYER_ERROR         -7

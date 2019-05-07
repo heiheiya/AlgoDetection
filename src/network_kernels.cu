@@ -2,7 +2,7 @@
 #include "curand.h"
 #include "cublas_v2.h"
 
-extern "C" {
+#include "utils.h"
 #include <stdio.h>
 #include <time.h>
 #include <assert.h>
@@ -10,7 +10,6 @@ extern "C" {
 #include "network.h"
 #include "image.h"
 #include "data.h"
-#include "utils.h"
 #include "parser.h"
 
 #include "crop_layer.h"
@@ -34,7 +33,7 @@ extern "C" {
 #include "route_layer.h"
 #include "shortcut_layer.h"
 #include "blas.h"
-}
+
 
 #ifdef OPENCV
 #include "opencv2/highgui/highgui_c.h"
@@ -42,8 +41,8 @@ extern "C" {
 
 #include "http_stream.h"
 
-float * get_network_output_gpu_layer(network net, int i);
-float * get_network_delta_gpu_layer(network net, int i);
+//float * get_network_output_gpu_layer(network net, int i);
+//float * get_network_delta_gpu_layer(network net, int i);
 float * get_network_output_gpu(network net);
 
 void forward_network_gpu(network net, network_state state)

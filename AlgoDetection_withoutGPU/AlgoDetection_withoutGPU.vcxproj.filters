@@ -15,208 +15,208 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\src\activation_layer.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="..\src\activations.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="..\src\AlgoDetection.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="..\src\art.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="..\src\avgpool_layer.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="..\src\batchnorm_layer.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="..\src\blas.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="..\src\box.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="..\src\captcha.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="..\src\cifar.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="..\src\classifier.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="..\src\coco.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="..\src\col2im.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="..\src\compare.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="..\src\connected_layer.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="..\src\convolutional_layer.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="..\src\cost_layer.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="..\src\cpu_gemm.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="..\src\crnn_layer.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="..\src\crop_layer.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="..\src\cuda.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="..\src\darknet.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="..\src\data.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="..\src\deconvolutional_layer.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="..\src\demo.c">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="..\src\detection_class.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="..\src\detection_layer.c">
+    <ClCompile Include="..\src\http_stream.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="..\src\detector.c">
+    <ClCompile Include="..\src\AlgoDetectionManager.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="..\src\dice.c">
+    <ClCompile Include="..\src\activation_layer.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="..\src\dropout_layer.c">
+    <ClCompile Include="..\src\activations.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="..\src\gemm.c">
+    <ClCompile Include="..\src\art.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\avgpool_layer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\batchnorm_layer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\blas.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\box.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\captcha.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\cifar.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\classifier.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\coco.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\col2im.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\compare.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\connected_layer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\convolutional_layer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\cost_layer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\cpu_gemm.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\crnn_layer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\crop_layer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\cuda.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\darknet.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\data.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\deconvolutional_layer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\demo.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\detection_layer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\detector.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\dice.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\dropout_layer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gemm.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="..\src\getopt.c">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="..\src\gettimeofday.c">
+    <ClCompile Include="..\src\gettimeofday.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="..\src\go.c">
+    <ClCompile Include="..\src\go.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="..\src\gru_layer.c">
+    <ClCompile Include="..\src\gru_layer.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="..\src\http_stream.cpp">
+    <ClCompile Include="..\src\im2col.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="..\src\im2col.c">
+    <ClCompile Include="..\src\image.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="..\src\image.c">
+    <ClCompile Include="..\src\layer.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="..\src\layer.c">
+    <ClCompile Include="..\src\list.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="..\src\list.c">
+    <ClCompile Include="..\src\local_layer.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="..\src\local_layer.c">
+    <ClCompile Include="..\src\matrix.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="..\src\matrix.c">
+    <ClCompile Include="..\src\maxpool_layer.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="..\src\maxpool_layer.c">
+    <ClCompile Include="..\src\network.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="..\src\network.c">
+    <ClCompile Include="..\src\nightmare.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="..\src\nightmare.c">
+    <ClCompile Include="..\src\normalization_layer.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="..\src\normalization_layer.c">
+    <ClCompile Include="..\src\option_list.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="..\src\option_list.c">
+    <ClCompile Include="..\src\parser.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="..\src\parser.c">
+    <ClCompile Include="..\src\region_layer.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="..\src\region_layer.c">
+    <ClCompile Include="..\src\reorg_layer.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="..\src\reorg_layer.c">
+    <ClCompile Include="..\src\reorg_old_layer.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="..\src\reorg_old_layer.c">
+    <ClCompile Include="..\src\rnn.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="..\src\rnn.c">
+    <ClCompile Include="..\src\rnn_layer.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="..\src\rnn_layer.c">
+    <ClCompile Include="..\src\rnn_vid.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="..\src\rnn_vid.c">
+    <ClCompile Include="..\src\route_layer.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="..\src\route_layer.c">
+    <ClCompile Include="..\src\shortcut_layer.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="..\src\shortcut_layer.c">
+    <ClCompile Include="..\src\softmax_layer.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="..\src\softmax_layer.c">
+    <ClCompile Include="..\src\super.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="..\src\super.c">
+    <ClCompile Include="..\src\swag.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="..\src\swag.c">
+    <ClCompile Include="..\src\tag.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="..\src\tag.c">
+    <ClCompile Include="..\src\tree.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="..\src\tree.c">
+    <ClCompile Include="..\src\upsample_layer.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="..\src\upsample_layer.c">
+    <ClCompile Include="..\src\utils.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="..\src\utils.c">
+    <ClCompile Include="..\src\voxel.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="..\src\voxel.c">
+    <ClCompile Include="..\src\writing.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="..\src\writing.c">
+    <ClCompile Include="..\src\yolo.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="..\src\yolo.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="..\src\yolo_layer.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="..\src\AlgoDetectionManager.cpp">
+    <ClCompile Include="..\src\yolo_layer.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

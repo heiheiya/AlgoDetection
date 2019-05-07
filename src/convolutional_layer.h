@@ -33,7 +33,7 @@ void update_convolutional_layer(convolutional_layer layer, int batch, float lear
 image *visualize_convolutional_layer(convolutional_layer layer, char *window, image *prev_weights);
 void binarize_weights(float *weights, int n, int size, float *binary);
 void swap_binary(convolutional_layer *l);
-void binarize_weights2(float *weights, int n, int size, char *binary, float *scales);
+//void binarize_weights2(float *weights, int n, int size, char *binary, float *scales);
 
 void binary_align_weights(convolutional_layer *l);
 

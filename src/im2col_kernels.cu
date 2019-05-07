@@ -3,10 +3,10 @@
 #include "cublas_v2.h"
 #include <stdint.h>
 
-extern "C" {
+
 #include "im2col.h"
 #include "cuda.h"
-}
+
 
 #include <stdio.h>
 #include <assert.h>
